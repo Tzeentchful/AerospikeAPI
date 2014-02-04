@@ -2,8 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>nz.tzeentchful</groupId>
   <artifactId>aerospikeapi</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
+  <version>0.0.1-SNAPSHOT</version>  
   
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,7 +32,7 @@
 		<dependency>
 			<groupId>com.aerospike</groupId>
 			<artifactId>aerospike-client</artifactId>
-			<version>3.0.5</version>
+			<version>3.0.21</version>
 			<classifier>jar-with-dependencies</classifier>
 		</dependency>
 	</dependencies>
