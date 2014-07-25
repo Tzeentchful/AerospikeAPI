@@ -6,6 +6,8 @@ tmp/**
 tmp/**/*
 *.tmp
 *.bak
+*.iml
+*.jar
 *.swp
 *~.nib
 local.properties
@@ -27,3 +29,5 @@ local.properties
 
 #maven
 target/
+
+.idea/

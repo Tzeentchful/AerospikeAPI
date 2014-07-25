@@ -26,13 +26,10 @@ public class AerospikeAPI extends JavaPlugin {
 		this.aerospikeAddress = config.getString("Aerospike.Address");
 		this.aerospikePort = config.getInt("Aerospike.Port");
 	}
-
 	
 	@Override
 	public void onDisable() {
-		getServer().getServicesManager().getRegistration(AeroAPI.class)
-		.getProvider().close();
+		getServer().getServicesManager().getRegistration(AeroAPI.class).getProvider().close();
 	}
-
 
 }

@@ -22,7 +22,7 @@ public class APIImpl implements AeroAPI {
 			asyncClient = new AsyncClient(address, port);
 			syncClient = new AerospikeClient(address, port);
 			policy = new WritePolicy();
-			policy.timeout = 50;
+			policy.timeout = 1000;
 			policy.recordExistsAction = RecordExistsAction.UPDATE;
 		} catch (AerospikeException e) {
 			e.printStackTrace();
