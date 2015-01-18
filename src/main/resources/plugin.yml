@@ -1,4 +1,5 @@
 name: AerospikeAPI
 author: Tzeentchful
 version: ${project.version}
+load: STARTUP
 main: nz.tzeentchful.aerospikeapi.plugin.AerospikeAPI
