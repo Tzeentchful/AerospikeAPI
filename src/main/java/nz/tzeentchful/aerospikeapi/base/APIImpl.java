@@ -10,11 +10,8 @@ import com.aerospike.client.policy.WritePolicy;
 
 public class APIImpl implements AeroAPI {
 
-	@Getter
 	private AsyncClient asyncClient = null;
-	@Getter
 	private AerospikeClient syncClient = null;
-	@Getter
 	private WritePolicy policy = null;
 
 	public APIImpl(String address, int port) {
@@ -32,5 +29,20 @@ public class APIImpl implements AeroAPI {
 	public void close() {
 		asyncClient.close();
 		syncClient.close();
+	}
+
+	@Override
+	public AsyncClient getAsyncClient() {
+		return asyncClient;
+	}
+
+	@Override
+	public AerospikeClient getSyncClient() {
+		return syncClient;
+	}
+
+	@Override
+	public WritePolicy getPolicy() {
+		return policy;
 	}
 }
